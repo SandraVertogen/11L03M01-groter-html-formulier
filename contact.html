@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> Contact </title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <header>
+        <h1 class="black-border">Mijn website van Winc Academy</h1>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Over mij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.google.nl">Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <fieldset>
+                <legend>Contactgegevens</legend>
+                <p>
+                    <label>Naam: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Telefoonnummer: <input type="tel" maxlength="10" name="tel" /></label>
+                </p>
+                <p>
+                    <label>Leeftijd: <input type="text" maxlength="2" name="leeftijd" /></label>
+                </p>
+                <p>
+                    <label>Geboortedatum: <input type="date" name="geboortedatum" /></label>
+                </p>
+                <p>
+                    Geslacht:
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Man</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Vrouw</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> Informatie over de chef</legend>
+                <p>
+                    Favoriete cuisine:
+                    <input type="checkbox" id="cuisine1" name="cuisine1" value="frans">
+                    <label for="cuisine1"> Frans</label>
+
+                    <input type="checkbox" id="cuisine2" name="cuisine2" value="italiaans">
+                    <label for="cuisine2"> Italiaans</label>
+
+                    <input type="checkbox" id="cuisine3" name="cuisine3" value="spaans">
+                    <label for="cuisine3"> Spaans</label>
+
+                    <input type="checkbox" id="cuisine4" name="cuisine4" value="arabisch">
+                    <label for="cuisine4"> Arabisch</label>
+                </p>
+                <p>
+                    <label>Favoriete kleur van short: <input type="color" name="colorpicker" /></label>
+                </p>
+                <p>
+                    <label>Biografie: <textarea name="biografie"></textarea></label>
+                </p>
+                <p>
+                    <label for="myfile">Upload je laatste recept:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </p>
+                <p>
+                    <label for="homepage">URL naar je receptenwebsite:</label>
+                    <input type="url" id="homepage" name="homepage">
+                </p>
+            </fieldset>
+            <p>
+                <input type="reset">
+                <button type="submit">Verzenden</button>
+            </p>
+        </form>
+    </main>
+    <hr />
+    <footer>
+        &copy; 2020
+    </footer>
+</body>
+
+</html>
